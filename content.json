@@ -141,53 +141,134 @@
     ],
     "menu_categories": [
         {
-            "name": "Cakes",
-            "slug": "cakes",
+            "name": "Classic Cakes (1LB)",
+            "slug": "classic-cakes",
             "items": [
                 {
-                    "name": "Chocolate Mousseline Cake",
-                    "price": "NPR 450",
-                    "image": "images/menu-mousse.jpg",
+                    "name": "Mocha Cake",
+                    "price": "NPR 1000",
+                    "image": "images/menu-mocha.jpg",
                     "tags": [
-                        "rich",
-                        "for sharing"
+                        "1lb"
                     ]
                 },
                 {
-                    "name": "Blueberry Cheesecake",
-                    "price": "NPR 420",
-                    "image": "images/menu-blueberry.jpg",
+                    "name": "Chocolate",
+                    "price": "NPR 950",
+                    "image": "images/menu-chocolate.jpg",
                     "tags": [
-                        "best seller"
+                        "1lb"
                     ]
                 },
                 {
-                    "name": "Red Velvet Slice",
-                    "price": "NPR 400",
-                    "image": "images/menu-redvelvet.jpg",
-                    "tags": []
-                },
-                {
-                    "name": "Carrot Cake",
-                    "price": "NPR 350",
-                    "image": "images/menu-carrot.jpg",
+                    "name": "Dark and White Cake",
+                    "price": "NPR 950",
+                    "image": "images/menu-dark-white.jpg",
                     "tags": [
-                        "contains nuts"
+                        "1lb"
                     ]
                 },
                 {
-                    "name": "Opera Cake",
-                    "price": "NPR 480",
-                    "image": "images/menu-opera.jpg",
+                    "name": "Blueberry Cake",
+                    "price": "NPR 900",
+                    "image": "images/menu-blueberry-cake.jpg",
                     "tags": [
-                        "coffee lover"
+                        "1lb"
+                    ]
+                },
+                {
+                    "name": "Butterscotch",
+                    "price": "NPR 900",
+                    "image": "images/menu-butterscotch.jpg",
+                    "tags": [
+                        "1lb"
+                    ]
+                },
+                {
+                    "name": "White/Black Forest",
+                    "price": "NPR 850",
+                    "image": "images/menu-forest.jpg",
+                    "tags": [
+                        "1lb"
+                    ]
+                },
+                {
+                    "name": "Mud Cake",
+                    "price": "NPR 850",
+                    "image": "images/menu-mud.jpg",
+                    "tags": [
+                        "1lb"
                     ]
                 }
             ]
         },
         {
-            "name": "Pastries",
-            "slug": "pastries",
+            "name": "Specialty Cakes (1LB)",
+            "slug": "specialty-cakes",
+            "items": [
+                {
+                    "name": "Baked Cheese Cake",
+                    "price": "NPR 1750",
+                    "image": "images/menu-baked-cheese.jpg",
+                    "tags": [
+                        "premium"
+                    ]
+                },
+                {
+                    "name": "Double Chocolate Cake",
+                    "price": "NPR 1450",
+                    "image": "images/menu-double-choc.jpg",
+                    "tags": [
+                        "rich"
+                    ]
+                },
+                {
+                    "name": "Matcha Cake",
+                    "price": "NPR 1200",
+                    "image": "images/menu-matcha-cake.jpg",
+                    "tags": [
+                        "premium"
+                    ]
+                },
+                {
+                    "name": "Tiramisu Cake",
+                    "price": "NPR 1200",
+                    "image": "images/menu-tiramisu-cake.jpg",
+                    "tags": [
+                        "bestseller"
+                    ]
+                },
+                {
+                    "name": "Mousseline Cake",
+                    "price": "NPR 1100",
+                    "image": "images/menu-mousseline.jpg",
+                    "tags": [
+                        "rich"
+                    ]
+                },
+                {
+                    "name": "Seasonal Fruit Cake",
+                    "price": "NPR 1000",
+                    "image": "images/menu-fruit.jpg",
+                    "tags": []
+                },
+                {
+                    "name": "Red Velvet Cake",
+                    "price": "NPR 950",
+                    "image": "images/menu-redvelvet.jpg",
+                    "tags": []
+                },
+                {
+                    "name": "Brownie Cake",
+                    "price": "NPR 900",
+                    "image": "images/menu-brownie.jpg",
+                    "tags": []
+                }
+            ]
+        },
+        {
+            "name": "Pastries & Drinks",
+            "slug": "pastries-drinks",
             "items": [
                 {
                     "name": "Butter Croissant",
@@ -204,55 +285,24 @@
                     "tags": []
                 },
                 {
-                    "name": "Almond Croissant",
-                    "price": "NPR 220",
-                    "image": "images/menu-almond.jpg",
-                    "tags": [
-                        "sweet"
-                    ]
-                },
-                {
-                    "name": "Cinnamon Roll",
-                    "price": "NPR 200",
-                    "image": "images/menu-cinnamon.jpg",
-                    "tags": [
-                        "warm"
-                    ]
-                }
-            ]
-        },
-        {
-            "name": "Drinks",
-            "slug": "drinks",
-            "items": [
-                {
                     "name": "Oreo Milkshake",
                     "price": "NPR 280",
-                    "image": "images/menu-oreo-milkshake.jpg"
+                    "image": "images/menu-oreo-milkshake.jpg",
+                    "tags": [
+                        "popular"
+                    ]
                 },
                 {
                     "name": "Cafe Latte",
                     "price": "NPR 220",
-                    "image": "images/menu-latte.jpg"
+                    "image": "images/menu-latte.jpg",
+                    "tags": []
                 },
                 {
                     "name": "Cappuccino",
                     "price": "NPR 200",
-                    "image": "images/menu-cappuccino.jpg"
-                },
-                {
-                    "name": "Americano",
-                    "price": "NPR 180",
-                    "image": "images/menu-americano.jpg",
+                    "image": "images/menu-cappuccino.jpg",
                     "tags": []
-                },
-                {
-                    "name": "Iced Tea",
-                    "price": "NPR 250",
-                    "image": "images/menu-icedtea.jpg",
-                    "tags": [
-                        "refreshing"
-                    ]
                 }
             ]
         }
