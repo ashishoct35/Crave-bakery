@@ -2,7 +2,8 @@
 :root {
     --primary-color: #5D4037;
     --accent-color: #D4AF37;
-    --bg-color: #FDFBF7; /* Soft cream */
+    --bg-color: #FDFBF7;
+    /* Soft cream */
     --text-color: #2C2C2C;
     --light-text: #666;
     --white: #FFFFFF;
@@ -27,7 +28,12 @@ body {
     overflow-x: hidden;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--font-heading);
     color: var(--primary-color);
     font-weight: 700;
@@ -69,9 +75,18 @@ nav {
     align-items: center;
     padding: 1.5rem 5%;
     background: transparent;
-    position: absolute;
     width: 100%;
     z-index: 100;
+    transition: background 0.3s, box-shadow 0.3s, padding 0.3s;
+}
+
+nav.scrolled {
+    background: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+    padding: 1rem 5%;
+    position: fixed;
+    top: 0;
 }
 
 .nav-logo img {
@@ -182,9 +197,17 @@ nav {
 }
 
 @keyframes morph {
-    0% { border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; }
-    50% { border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%; }
-    100% { border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%; }
+    0% {
+        border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    }
+
+    50% {
+        border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+
+    100% {
+        border-radius: 40% 60% 70% 30% / 40% 50% 60% 50%;
+    }
 }
 
 /* Sections */
@@ -215,6 +238,22 @@ section {
 
 .card:hover {
     transform: translateY(-10px);
+    box-shadow: 0 20px 40px rgba(93, 64, 55, 0.15);
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 12px;
+    margin-bottom: 1.5rem;
+    position: relative;
+}
+
+.gallery-item img {
+    transition: transform 0.5s ease;
+}
+
+.gallery-item:hover img {
+    transform: scale(1.1);
 }
 
 .card-image {
@@ -275,7 +314,8 @@ footer {
     }
 
     .nav-links {
-        display: none; /* Implement mobile menu JS later */
+        display: none;
+        /* Implement mobile menu JS later */
     }
 
     .mobile-menu-btn {

@@ -41,7 +41,12 @@ function setupNavigation(content) {
     // Logo
     const logoContainer = nav.querySelector('.nav-logo');
     if (logoContainer) {
-        logoContainer.innerHTML = `<a href="index.html"><img src="${content.brand.logo}" alt="${content.site_title}"></a>`;
+        logoContainer.innerHTML = `
+            <a href="index.html" style="display: flex; align-items: center; gap: 1rem;">
+                <img src="${content.brand.logo}" alt="${content.site_title}">
+                <span class="brand-name" style="font-family: var(--font-heading); font-size: 1.5rem; font-weight: 700; color: var(--primary-color);">${content.site_title}</span>
+            </a>
+        `;
     }
 
     // Links (Static for now, could be dynamic)
@@ -58,6 +63,15 @@ function setupNavigation(content) {
             <a href="contact.html">Contact</a>
         `;
     }
+
+    // Sticky Navbar Logic
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 50) {
+            nav.classList.add('scrolled');
+        } else {
+            nav.classList.remove('scrolled');
+        }
+    });
 
     // Mobile Menu Toggle
     const mobileBtn = document.querySelector('.mobile-menu-btn');
@@ -227,45 +241,6 @@ window.openLightbox = function (src, caption) {
     document.body.appendChild(lightbox);
 }
 
-function loadContactPage(content) {
-    const info = document.getElementById('contact-info');
-    if (!info) return;
-
-    const outlet = content.outlets.find(o => o.id === content.contact.default_outlet_id) || content.outlets[0];
-
-    info.innerHTML = `
-        <h2>Contact Us</h2>
-        <p><strong>Email:</strong> ${content.contact.general_email}</p>
-        <p><strong>Phone:</strong> ${content.contact.general_phone}</p>
-        <p><strong>Address:</strong> ${outlet.address}</p>
-    `;
-
-    const mapContainer = document.getElementById('contact-map');
-    if (mapContainer) {
-        mapContainer.innerHTML = outlet.google_map_embed.startsWith('<iframe') ? outlet.google_map_embed : `<iframe src="${outlet.google_map_embed}" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>`;
-    }
-}
-
-function setupPageTransitions() {
-    const overlay = document.createElement('div');
-    overlay.className = 'page-transition';
-    document.body.appendChild(overlay);
-
-    document.querySelectorAll('a').forEach(link => {
-        if (link.hostname === window.location.hostname) {
-            link.addEventListener('click', e => {
-                e.preventDefault();
-                const href = link.getAttribute('href');
-
-                overlay.classList.add('active');
-
-                setTimeout(() => {
-                    window.location.href = href;
-                }, 600);
-            });
-        }
-    });
-}
 
 // Image Error Handling
 window.addEventListener('error', function (e) {

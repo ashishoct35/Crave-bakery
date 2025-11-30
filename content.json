@@ -94,6 +94,26 @@
                     "hours": "9:00 AM – 7:00 PM"
                 }
             ]
+        },
+        {
+            "id": "jhamsikhel",
+            "name": "Crave Jhamsikhel",
+            "is_featured": false,
+            "hero_title": "Coffee & Conversations",
+            "hero_subtitle": "The perfect spot for your morning brew.",
+            "hero_image": "images/jhamsikhel-hero.jpg",
+            "cover_image": "images/jhamsikhel-cover.jpg",
+            "address": "Jhamsikhel, Lalitpur",
+            "phone": "+977 9822222222",
+            "whatsapp": "+977 9822222222",
+            "email": "jhamsikhel@crave.com",
+            "google_map_embed": "<iframe src=\"https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.0!2d85.30!3d27.68!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjfCsDQwJzIxLjAiTiA4NcKwMTgnNTIuOSJF!5e0!3m2!1sen!2snp!4v1600000000000!5m2!1sen!2snp\" width=\"600\" height=\"450\" style=\"border:0;\" allowfullscreen=\"\" loading=\"lazy\"></iframe>",
+            "opening_hours": [
+                {
+                    "day": "Sunday",
+                    "hours": "7:00 AM – 9:00 PM"
+                }
+            ]
         }
     ],
     "specials": [
@@ -110,6 +130,13 @@
             "badge": "Customer Favorite",
             "image": "images/special-oreo.jpg",
             "description": "Rich, thick and perfectly balanced – not too sweet."
+        },
+        {
+            "name": "Matcha Latte",
+            "price": "NPR 300",
+            "badge": "New",
+            "image": "images/special-matcha.jpg",
+            "description": "Premium Japanese matcha with steamed milk."
         }
     ],
     "menu_categories": [
@@ -135,10 +162,26 @@
                     ]
                 },
                 {
-                    "name": "Red Velvet",
+                    "name": "Red Velvet Slice",
                     "price": "NPR 400",
                     "image": "images/menu-redvelvet.jpg",
                     "tags": []
+                },
+                {
+                    "name": "Carrot Cake",
+                    "price": "NPR 350",
+                    "image": "images/menu-carrot.jpg",
+                    "tags": [
+                        "contains nuts"
+                    ]
+                },
+                {
+                    "name": "Opera Cake",
+                    "price": "NPR 480",
+                    "image": "images/menu-opera.jpg",
+                    "tags": [
+                        "coffee lover"
+                    ]
                 }
             ]
         },
@@ -159,6 +202,22 @@
                     "price": "NPR 180",
                     "image": "images/menu-pain-chocolat.jpg",
                     "tags": []
+                },
+                {
+                    "name": "Almond Croissant",
+                    "price": "NPR 220",
+                    "image": "images/menu-almond.jpg",
+                    "tags": [
+                        "sweet"
+                    ]
+                },
+                {
+                    "name": "Cinnamon Roll",
+                    "price": "NPR 200",
+                    "image": "images/menu-cinnamon.jpg",
+                    "tags": [
+                        "warm"
+                    ]
                 }
             ]
         },
@@ -180,6 +239,20 @@
                     "name": "Cappuccino",
                     "price": "NPR 200",
                     "image": "images/menu-cappuccino.jpg"
+                },
+                {
+                    "name": "Americano",
+                    "price": "NPR 180",
+                    "image": "images/menu-americano.jpg",
+                    "tags": []
+                },
+                {
+                    "name": "Iced Tea",
+                    "price": "NPR 250",
+                    "image": "images/menu-icedtea.jpg",
+                    "tags": [
+                        "refreshing"
+                    ]
                 }
             ]
         }
@@ -200,6 +273,22 @@
         {
             "image": "images/gallery-4.jpg",
             "caption": "Our barista pouring latte art"
+        },
+        {
+            "image": "images/gallery-5.jpg",
+            "caption": "Outdoor seating area"
+        },
+        {
+            "image": "images/gallery-6.jpg",
+            "caption": "Birthday cake custom order"
+        },
+        {
+            "image": "images/gallery-7.jpg",
+            "caption": "Morning coffee vibes"
+        },
+        {
+            "image": "images/gallery-8.jpg",
+            "caption": "Selection of pastries"
         }
     ],
     "reviews": [
