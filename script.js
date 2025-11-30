@@ -58,6 +58,25 @@ function setupNavigation(content) {
             <a href="contact.html">Contact</a>
         `;
     }
+
+    // Mobile Menu Toggle
+    const mobileBtn = document.querySelector('.mobile-menu-btn');
+    const navLinks = document.querySelector('.nav-links');
+    if (mobileBtn && navLinks) {
+        mobileBtn.addEventListener('click', () => {
+            navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+            if (navLinks.style.display === 'flex') {
+                navLinks.style.flexDirection = 'column';
+                navLinks.style.position = 'absolute';
+                navLinks.style.top = '100%';
+                navLinks.style.left = '0';
+                navLinks.style.width = '100%';
+                navLinks.style.background = 'var(--bg-color)';
+                navLinks.style.padding = '1rem';
+                navLinks.style.boxShadow = 'var(--shadow)';
+            }
+        });
+    }
 }
 
 function setupFooter(content) {
@@ -247,3 +266,11 @@ function setupPageTransitions() {
         }
     });
 }
+
+// Image Error Handling
+window.addEventListener('error', function (e) {
+    if (e.target.tagName === 'IMG') {
+        e.target.src = 'https://placehold.co/600x400?text=Crave+Bakery';
+        e.target.alt = 'Image not found';
+    }
+}, true);
