@@ -1,3 +1,4 @@
+// Version: 1.1 - Menu items update
 document.addEventListener('DOMContentLoaded', async () => {
     // 1. Fetch Content
     let content = {};
