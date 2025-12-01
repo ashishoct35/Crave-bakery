@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     // 1. Fetch Content
     let content = {};
     try {
-        const response = await fetch('content.json');
+        const response = await fetch('/content.json');
         content = await response.json();
     } catch (error) {
         console.error('Failed to load content.json', error);
