@@ -3,43 +3,29 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Gallery - Crave Bakery</title>
-    <link rel="stylesheet" href="/src/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700&display=swap"
-        rel="stylesheet">
-    <style>
-        #gallery-grid {
-            column-count: 3;
-            column-gap: 1.5rem;
-        }
+    .gallery-item {
+    break-inside: avoid;
+    margin-bottom: 1.5rem;
+    border-radius: 12px;
+    overflow: hidden;
+    transition: transform 0.3s;
+    }
 
-        .gallery-item {
-            break-inside: avoid;
-            margin-bottom: 1.5rem;
-            border-radius: 12px;
-            overflow: hidden;
-            transition: transform 0.3s;
-        }
+    .gallery-item:hover {
+    transform: scale(1.02);
+    }
 
-        .gallery-item:hover {
-            transform: scale(1.02);
-        }
+    @media (max-width: 768px) {
+    #gallery-grid {
+    column-count: 2;
+    }
+    }
 
-        @media (max-width: 768px) {
-            #gallery-grid {
-                column-count: 2;
-            }
-        }
-
-        @media (max-width: 480px) {
-            #gallery-grid {
-                column-count: 1;
-            }
-        }
+    @media (max-width: 480px) {
+    #gallery-grid {
+    column-count: 1;
+    }
+    }
     </style>
 </head>
 

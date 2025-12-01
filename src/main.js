@@ -97,15 +97,33 @@ function setupNavigation(content) {
 function setupFooter(content) {
     const footer = document.querySelector('footer');
     if (!footer) return;
+
+    // Generate WhatsApp links for each outlet
+    const whatsappLinks = content.outlets.map(outlet => `
+        <a href="https://wa.me/${outlet.whatsapp.replace(/\D/g, '')}" target="_blank" class="whatsapp-link">
+            <i class="fab fa-whatsapp"></i> ${outlet.name.split('-')[0].trim()}
+        </a>
+    `).join('');
+
     footer.innerHTML = `
         <div class="footer-content">
             <h3>${content.site_title}</h3>
             <p>${content.brand.tagline}</p>
+            
             <div class="social-links">
-                ${content.social.facebook ? `<a href="${content.social.facebook}">Facebook</a>` : ''}
-                ${content.social.instagram ? `<a href="${content.social.instagram}">Instagram</a>` : ''}
+                ${content.social.facebook ? `<a href="${content.social.facebook}" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>` : ''}
+                ${content.social.instagram ? `<a href="${content.social.instagram}" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>` : ''}
+                ${content.social.tiktok ? `<a href="${content.social.tiktok}" target="_blank" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>` : ''}
             </div>
-            <p>&copy; ${new Date().getFullYear()} ${content.site_title}. All rights reserved.</p>
+
+            <div class="footer-contact">
+                <h4>Reach us on WhatsApp</h4>
+                <div class="whatsapp-grid">
+                    ${whatsappLinks}
+                </div>
+            </div>
+
+            <p class="copyright">&copy; ${new Date().getFullYear()} ${content.site_title}. All rights reserved.</p>
         </div>
     `;
 }
