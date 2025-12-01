@@ -272,131 +272,112 @@ section {
 }
 
 .card-price {
-    color: var(--accent-color);
-    font-weight: 700;
-    font-size: 1.2rem;
-}
 
-.badge {
-    background: var(--accent-color);
-    color: var(--white);
-    padding: 0.25rem 0.75rem;
-    border-radius: 20px;
-    font-size: 0.8rem;
-}
-
-.social-links {
-    display: flex;
-    justify-content: center;
-    gap: 1.5rem;
-    margin: 2rem 0;
-}
-
-.social-links a {
-    color: var(--white);
-    font-size: 1.5rem;
-    width: 45px;
-    height: 45px;
-    border-radius: 50%;
-    background: rgba(255, 255, 255, 0.1);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-}
-
-.social-links a:hover {
-    background: var(--accent-color);
-    transform: translateY(-3px);
-}
-
-.footer-contact {
-    margin: 2rem 0;
-    padding: 2rem 0;
-    border-top: 1px solid rgba(255, 255, 255, 0.1);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
-}
-
-.footer-contact h4 {
-    color: var(--white);
-    margin-bottom: 1.5rem;
-    font-family: var(--font-body);
-    font-weight: 500;
-}
-
-.whatsapp-grid {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.whatsapp-link {
-    display: inline-flex;
-    align-items: center;
-    gap: 0.5rem;
-    background: #25D366;
-    color: white;
-    padding: 0.5rem 1.2rem;
-    border-radius: 25px;
-    font-size: 0.9rem;
-    font-weight: 500;
-    transition: transform 0.3s;
-}
-
-.whatsapp-link:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
-}
-
-.copyright {
-    font-size: 0.9rem;
-    opacity: 0.7;
-    margin-top: 2rem;
-}
-
-/* Contact Page Styles */
-.contact-outlet-card {
-    background: var(--white);
-    padding: 2rem;
-    border-radius: 12px;
-    box-shadow: var(--shadow);
-    transition: transform 0.3s, box-shadow 0.3s;
-}
-
-.contact-outlet-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 15px 35px rgba(93, 64, 55, 0.15);
-}
-
-.whatsapp-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-    .hero {
-        flex-direction: column;
-        padding-top: 8rem;
-        text-align: center;
+    .social-links a {
+        color: var(--white);
+        font-size: 1.5rem;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.1);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.3s ease;
     }
 
-    .hero-content {
-        padding-right: 0;
-        margin-bottom: 3rem;
+    .social-links a:hover {
+        background: var(--accent-color);
+        transform: translateY(-3px);
     }
 
-    .hero-title {
-        font-size: 2.5rem;
+    .footer-contact {
+        margin: 2rem 0;
+        padding: 2rem 0;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
     }
 
-    .nav-links {
-        display: none;
-        /* Implement mobile menu JS later */
+    .footer-contact h4 {
+        color: var(--white);
+        margin-bottom: 1.5rem;
+        font-family: var(--font-body);
+        font-weight: 500;
     }
 
-    .mobile-menu-btn {
-        display: block;
+    .whatsapp-grid {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 1rem;
     }
-}
+
+    .whatsapp-link {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.5rem;
+        background: #25D366;
+        color: white;
+        padding: 0.5rem 1.2rem;
+        border-radius: 25px;
+        font-size: 0.9rem;
+        font-weight: 500;
+        transition: transform 0.3s;
+    }
+
+    .whatsapp-link:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 5px 15px rgba(37, 211, 102, 0.3);
+    }
+
+    .copyright {
+        font-size: 0.9rem;
+        opacity: 0.7;
+        margin-top: 2rem;
+    }
+
+    /* Contact Page Styles */
+    .contact-outlet-card {
+        background: var(--white);
+        padding: 2rem;
+        border-radius: 12px;
+        box-shadow: var(--shadow);
+        transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .contact-outlet-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(93, 64, 55, 0.15);
+    }
+
+    .whatsapp-button:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(37, 211, 102, 0.3);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .hero {
+            flex-direction: column;
+            padding-top: 8rem;
+            text-align: center;
+        }
+
+        .hero-content {
+            padding-right: 0;
+            margin-bottom: 3rem;
+        }
+
+        .hero-title {
+            font-size: 2.5rem;
+        }
+
+        .nav-links {
+            display: none;
+            /* Implement mobile menu JS later */
+        }
+
+        .mobile-menu-btn {
+            display: block;
+        }
+    }
